@@ -12,7 +12,7 @@ body{
 }
 @media (min-width:760px){
     .desktop{
-        display: inherit;
+        display:inherit;
     }
 }
 header{
@@ -45,7 +45,19 @@ header nav.right{
 }
 section{
     height: 100vh;
- 
     background-size: cover;
     background-position: center center;
+}
+section .content{
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    text-align: center;
+}
+section h1{
+    font-size: 3rem;
+}
+section a{
+    color: inherit;
 }
