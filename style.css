@@ -42,7 +42,7 @@ header nav.center {
 }
 header nav.right {
   text-align: right;
-  display: ;
+  display: inherit;
 }
 section {
   height: 100vh;
