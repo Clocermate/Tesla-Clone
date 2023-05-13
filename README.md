@@ -1,2 +1,2 @@
 # Tesla-Clone
-A basic clone of official tesla website
+A basic clone of official tesla website:tesla.com

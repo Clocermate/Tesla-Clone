@@ -24,6 +24,7 @@ header {
   z-index: 2;
   width: 100%;
 }
+
 a.logo {
   height: 12px;
   width: 100px;
@@ -41,6 +42,7 @@ header nav.center {
 }
 header nav.right {
   text-align: right;
+  display: ;
 }
 section {
   height: 100vh;
@@ -89,4 +91,39 @@ section .buttons {
     column-gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
+}
+aside {
+  position: fixed;
+  right: -320px;
+  width: 320px;
+  background-color: white;
+  padding: 80px 40px;
+  z-index: 4;
+  height: 100vh;
+}
+aside a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+aside button.close {
+  font-size: 24px;
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.backdrop{
+  display: none;
+  position: fixed;
+  inset:0;
+  background-color:rgba(0,0,0,.35) ;
+  backdrop-filter: blur(5px);
 }
