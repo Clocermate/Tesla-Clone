@@ -42,7 +42,7 @@ header nav.center {
 }
 header nav.right {
   text-align: right;
-  display: inherit;
+  display: inherit ;
 }
 section {
   height: 100vh;
@@ -101,6 +101,9 @@ aside {
   z-index: 4;
   height: 100vh;
 }
+aside.active{
+  right:0;
+}
 aside a {
   display: block;
   color: inherit;
@@ -119,6 +122,7 @@ aside button.close {
   padding: 10px;
   font-family: sans-serif;
   font-weight: 100;
+  cursor: pointer;
 }
 .backdrop{
   display: none;
@@ -126,4 +130,7 @@ aside button.close {
   inset:0;
   background-color:rgba(0,0,0,.35) ;
   backdrop-filter: blur(5px);
+}
+.backdrop.active{
+  display: block;
 }
