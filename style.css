@@ -10,9 +10,9 @@ body{
 .desktop{
     display: none;
 }
-@media (min-width:760px){
+@media (min-width:768px){
     .desktop{
-        display:inherit;
+        display:block;
     }
 }
 header{
@@ -54,10 +54,35 @@ section .content{
     padding-top: 15vh;
     padding-bottom: 15vh;
     text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
 }
 section h1{
     font-size: 3rem;
 }
 section a{
     color: inherit;
+}
+section .buttons a{
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+section .buttons{
+    display: grid;
+    row-gap: 20px;
+}
+@media (min-width:768px){
+   section .buttons{
+max-width: 640px;
+margin: 0 auto;
+column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+   }
 }
